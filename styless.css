@@ -1,0 +1,46 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+.card-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.dentist-card {
+    max-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+.card-header {
+    background: linear-gradient(45deg, #007bff, #00aaff);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.card-body {
+    background-color: #ffffff;
+    padding: 40px 20px 30px;
+    position: relative;
+    top: -20px;
+    border-radius: 15px;
+}
+.card-title {
+    margin-bottom: 15px;
+}
+.contact-info {
+    color: #333;
+}
+.contact-info i {
+    width: 20px;
+    margin-right: 10px;
+    color: #007bff;
+}
+.contact-info a {
+    color: #007bff;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
