@@ -1,12 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const contactInfo = document.querySelectorAll('.contact-info p');
+// JavaScript
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var cardPosition = $('.dentist-card').offset().top;
 
-    contactInfo.forEach(info => {
-        info.addEventListener('mouseover', () => {
-            info.style.fontWeight = 'bold';
-        });
-        info.addEventListener('mouseout', () => {
-            info.style.fontWeight = 'normal';
-        });
+        if (scrollPosition > cardPosition) {
+            $('.dentist-card').addClass('card-show');
+        } else {
+            $('.dentist-card').removeClass('card-show');
+        }
     });
 });
