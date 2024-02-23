@@ -1,10 +1,10 @@
-// script.js
+// JavaScript
+$(document).ready(function () {
+    $('#card').click(function () {
+        $('#body').toggleClass('d-none'); // Alterna la clase d-none para mostrar u ocultar el cuerpo al hacer clic
+    });
 
-// Obtener elementos del DOM
-const cardBody = document.getElementById('body');
-const cardHeader = document.querySelector('.card-header');
-
-// Mostrar/ocultar información de contacto al hacer clic en el encabezado
-cardHeader.addEventListener('click', () => {
-    cardBody.classList.toggle('d-none');
+    $('.contact-info p').hover(function () {
+        $(this).toggleClass('bg-light text-success'); // Alterna las clases de fondo y color de texto al pasar el cursor
+    });
 });
