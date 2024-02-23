@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Signifier:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sohne:wght@400;500;700&display=swap');
 /* CSS */
 body {
     background-color: #f0f8ff; /* Color azul claro para el fondo */
-    font-family: 'San Francisco', sans-serif; /* Fuente tipo Apple */
+    font-family: 'Signifier', 'Sohne', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

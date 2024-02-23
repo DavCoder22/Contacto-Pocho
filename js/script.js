@@ -20,5 +20,5 @@ $(document).ready(function () {
         }
         $('#name').text(nameArray.slice(0, nameIndex).join(''));
         nameIndex += nameDirection;
-    }, 300);
+    }, 600);
 });
