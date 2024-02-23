@@ -2,6 +2,20 @@
 body {
     background-color: #f0f8ff; /* Color azul claro para el fondo */
     font-family: 'San Francisco', sans-serif; /* Fuente tipo Apple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que la tarjeta esté centrada verticalmente */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .dentist-card {
@@ -13,6 +27,7 @@ body {
     margin-top: 20px;
     transition: transform 0.3s ease; /* Transición suave al crecer */
     max-width: 500px; /* Controla el tamaño máximo de la tarjeta */
+    width: 90%; /* Asegura que la tarjeta sea responsive */
 }
 
     .dentist-card:hover {
@@ -26,12 +41,12 @@ body {
 }
 
 .title-container {
-    position: relative;
+    position: initial;
     z-index: 1;
 }
 
 .image-container {
-    position: absolute;
+    position: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
