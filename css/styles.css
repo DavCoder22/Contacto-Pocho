@@ -1,6 +1,7 @@
 /* CSS */
 body {
     background-color: #f0f8ff; /* Color azul claro para el fondo */
+    font-family: 'San Francisco', sans-serif; /* Fuente tipo Apple */
 }
 
 .dentist-card {
@@ -11,6 +12,7 @@ body {
     overflow: hidden;
     margin-top: 20px;
     transition: transform 0.3s ease; /* Transición suave al crecer */
+    max-width: 500px; /* Controla el tamaño máximo de la tarjeta */
 }
 
     .dentist-card:hover {
