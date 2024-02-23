@@ -10,8 +10,15 @@ $(document).ready(function () {
 
     // Efecto de escritura para el nombre
     var name = $('#name').text();
+    var nameArray = name.split('');
+    var nameIndex = 0;
+    var nameDirection = 1;
+
     setInterval(function () {
-        name = name[name.length - 1] + name.substring(0, name.length - 1);
-        $('#name').text(name);
+        if (nameIndex >= nameArray.length || nameIndex < 0) {
+            nameDirection *= -1;
+        }
+        $('#name').text(nameArray.slice(0, nameIndex).join(''));
+        nameIndex += nameDirection;
     }, 300);
 });

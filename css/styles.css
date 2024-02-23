@@ -23,19 +23,28 @@ body {
     position: relative; /* Para posicionar la imagen */
 }
 
-    .card-header img {
-        max-width: 50%; /* Reducir el tamaño de la imagen a la mitad */
-        border-radius: 50%;
-        position: absolute; /* Posición absoluta para colocarla debajo del nombre */
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -50px; /* Distancia desde la parte inferior del encabezado */
-        transition: transform 0.3s ease; /* Transición suave al crecer */
-    }
+.title-container {
+    position: relative;
+    z-index: 1;
+}
 
-        .card-header img:hover {
-            transform: translateX(-50%) scale(1.1); /* Crece un poco al pasar el cursor */
-        }
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Controla el tamaño de la imagen */
+}
+
+.card-header img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Transición suave al crecer */
+}
+
+    .card-header img:hover {
+        transform: scale(1.1); /* Crece un poco al pasar el cursor */
+    }
 
 .card-body {
     padding: 20px;
