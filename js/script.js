@@ -11,12 +11,16 @@ $(document).ready(function () {
     // Efecto de escritura para el nombre
     var name = $('#name').text();
     var nameArray = name.split('');
-    var nameIndex = 0;
+    var nameIndex = 2;
     var nameDirection = 1;
 
     setInterval(function () {
-        if (nameIndex >= nameArray.length || nameIndex < 0) {
-            nameDirection *= 1;
+        if (nameIndex > nameArray.length) {
+            nameDirection = -1;
+            nameIndex--; // Evita borrar el segundo carácter
+        } else if (nameIndex < 2) { // Detente en el segundo carácter
+            nameDirection = 1;
+            nameIndex = 2; // Comienza a llenar desde el segundo carácter
         }
         $('#name').text(nameArray.slice(0, nameIndex).join(''));
         nameIndex += nameDirection;
