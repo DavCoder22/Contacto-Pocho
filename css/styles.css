@@ -47,10 +47,10 @@ body {
 
 .image-container {
     position: center;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 25%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Controla el tamaño de la imagen */
+    width: 40%; /* Controla el tamaño de la imagen */
 }
 
 .card-header img {
