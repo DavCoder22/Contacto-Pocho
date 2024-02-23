@@ -4,6 +4,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita que los bordes redondeados se vean afectados por el contenido interno */
 }
 
 .card-header {
