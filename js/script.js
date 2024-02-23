@@ -8,20 +8,25 @@ $(document).ready(function () {
         $(this).toggleClass('bg-light text-success'); // Alterna las clases de fondo y color de texto al pasar el cursor
     });
 
-    setInterval(function () {
-        if (isWaiting) return; // Si está esperando, no hagas nada
+    // Efecto de escritura para el nombre
+    var name = $('#name').text();
+    var nameArray = name.split('');
+    var nameIndex = 2;
+    var nameDirection = 1;
 
-        if (nameIndex > nameArray.length) {
+    setInterval(function () {
+       
+        setTimeout(function () {
+            // Tu código aquí se ejecutará después de 5 segundos 
+            if (nameIndex > nameArray.length) {
             nameDirection = -1;
             nameIndex--; // Evita borrar el segundo carácter
-            isWaiting = true; // Comienza a esperar
-            setTimeout(function () {
-                isWaiting = false; // Termina la espera después de 5 segundos
-            }, 5000);
         } else if (nameIndex < 2) { // Detente en el segundo carácter
             nameDirection = 1;
+
             nameIndex = 2; // Comienza a llenar desde el segundo carácter
         }
+        }, 5000);
         $('#name').text(nameArray.slice(0, nameIndex).join(''));
         nameIndex += nameDirection;
     }, 85);
