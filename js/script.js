@@ -16,9 +16,9 @@ $(document).ready(function () {
 
     setInterval(function () {
         if (nameIndex >= nameArray.length || nameIndex < 0) {
-            nameDirection *= -1;
+            nameDirection *= 1;
         }
         $('#name').text(nameArray.slice(0, nameIndex).join(''));
         nameIndex += nameDirection;
-    }, 100);
+    }, 85);
 });
