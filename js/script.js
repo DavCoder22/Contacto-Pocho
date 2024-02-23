@@ -16,8 +16,8 @@ $(document).ready(function () {
             nameIndex--; // Evita borrar el segundo carácter
             isWaiting = true; // Comienza a esperar
             setTimeout(function () {
-                isWaiting = false; // Termina la espera después de 6 segundos
-            }, 6000);
+                isWaiting = false; // Termina la espera después de 5 segundos
+            }, 5000);
         } else if (nameIndex < 2) { // Detente en el segundo carácter
             nameDirection = 1;
             nameIndex = 2; // Comienza a llenar desde el segundo carácter
